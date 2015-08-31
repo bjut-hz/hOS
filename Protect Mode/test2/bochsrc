@@ -5,9 +5,10 @@ romimage:file=/usr/local/share/bochs/BIOS-bochs-latest
 #这个是BIOS-bochs-latest的路径,自己去慢慢找,应该都不同的  
 vgaromimage:file=/usr/local/share/bochs/VGABIOS-lgpl-latest  
 #这个是VGABIOS-lgpl-latest的路径,自己去慢慢找,应该都不同的  
-floppya:1_44=a.img,status=inserted 
+floppya: 1_44=freedos.img, status=inserted
+floppyb: 1_44=pm.img, status=inserted
 #这个是启动软盘,就是我们刚才做的那个,就在当前目录下  
-boot:floppy  
+boot:a  
 #这个决定boot从软盘启动还是硬盘启动,照抄就好了  
 log:bochsout.txt  
 #这个是登陆选项照抄  
