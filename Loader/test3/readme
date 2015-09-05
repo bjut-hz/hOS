@@ -1,0 +1,1 @@
+在boot.asm读取loader.bin，并把其读入内存，实现了把控制权交给loader

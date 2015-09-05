@@ -1,0 +1,1 @@
+在boot.asm中添加了FAT12的头信息以读取写在磁盘中的Loader程序
