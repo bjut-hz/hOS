@@ -1,0 +1,8 @@
+在linux下用汇编编写程序，打印hello world!
+编译步骤：
+1、使用nasm命令编译汇编程序，输出格式为elf
+	nasm -f elf hello.asm -o hello.o
+2、使用链接器链接,由于安装的是64位系统，因此链接时需要模拟i386平台
+	ld -m elf_i386 -s hello.o -o hello
+3、运行程序
+	./hello
