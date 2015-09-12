@@ -1,0 +1,4 @@
+添加了内核kernel模块，以kernel.bin写入磁盘中，运行时boot首先加载loader程序，
+把控制权交给loader程序，loader程序负责把内核模块加载到内存并完成其他相关的工作。
+在loader程序中添加了显示内存信息的功能以及开启分页机制。
+loader程序把控制uan交给kernel，kernel内的程序在运行，显示字母H
